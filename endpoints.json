@@ -1,0 +1,94 @@
+{
+  "endpoints": [
+    {
+      "name": "Gojek",
+      "url": "https://api.gojek.com/v1/customers/request-otp",
+      "method": "POST",
+      "body": {"phone_number": "{nomor}"}
+    },
+    {
+      "name": "Tokopedia",
+      "url": "https://accounts.tokopedia.com/login/request-otp",
+      "method": "POST",
+      "body": {"msisdn": "{nomor}"}
+    },
+    {
+      "name": "Shopee",
+      "url": "https://shopee.co.id/api/v2/authentication/request_otp",
+      "method": "POST",
+      "body": {"phone": "{nomor}", "type": "login"}
+    },
+    {
+      "name": "OVO",
+      "url": "https://api.ovo.id/v3/auth/request",
+      "method": "POST",
+      "body": {"mobile": "{nomor}", "deviceId": "spam_bot"}
+    },
+    {
+      "name": "Dana",
+      "url": "https://api.dana.id/v1/auth/otp/request",
+      "method": "POST",
+      "body": {"phoneNumber": "{nomor}"}
+    },
+    {
+      "name": "Grab",
+      "url": "https://api.grab.com/v1/identity/otp/send",
+      "method": "POST",
+      "body": {"phone": "{nomor}", "countryCode": "ID"}
+    },
+    {
+      "name": "LinkAja",
+      "url": "https://api.linkaja.com/v1/auth/otp",
+      "method": "POST",
+      "body": {"phone": "{nomor}"}
+    },
+    {
+      "name": "BRI Mobile",
+      "url": "https://api.bri.co.id/brispot/otp/request",
+      "method": "POST",
+      "body": {"customerId": "{nomor}"}
+    },
+    {
+      "name": "BCA Mobile",
+      "url": "https://api.bca.co.id/otp/generate",
+      "method": "POST",
+      "body": {"msisdn": "{nomor}"}
+    },
+    {
+      "name": "WhatsApp Business",
+      "url": "https://graph.facebook.com/v17.0/WA_ACCOUNT_ID/request_otp",
+      "method": "POST",
+      "body": {"phone_number": "{nomor}"}
+    },
+    {
+      "name": "MyPertamina",
+      "url": "https://api.mypertamina.id/v1/auth/otp",
+      "method": "POST",
+      "body": {"mobile": "{nomor}"}
+    },
+    {
+      "name": "Traveloka",
+      "url": "https://api.traveloka.com/v2/user/otp",
+      "method": "POST",
+      "body": {"phoneNumber": "{nomor}"}
+    },
+    {
+      "name": "Bukalapak",
+      "url": "https://api.bukalapak.com/v2/users/otp.json",
+      "method": "POST",
+      "body": {"phone": "{nomor}"}
+    },
+    {
+      "name": "Lazada",
+      "url": "https://auth.lazada.com/rest/auth/otp/send",
+      "method": "POST",
+      "body": {"mobile": "{nomor}"}
+    },
+    {
+      "name": "Bilibili",
+      "url": "https://passport.bilibili.com/x/sms/send",
+      "method": "POST",
+      "body": {"tel": "{nomor}", "country": "86"}
+    }
+  ]
+}
