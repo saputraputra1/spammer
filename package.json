@@ -1,0 +1,8 @@
+{
+  "name": "otp-spammer-vercel",
+  "version": "1.0.0",
+  "description": "OTP Spammer using Vercel Serverless Functions",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
